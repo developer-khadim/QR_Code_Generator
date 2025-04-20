@@ -1,7 +1,7 @@
 import Image from "next/image";
 import GlassIMG from "../public/glass.png";
 import QRCodeGenerator from "../components/ui/QRCodeGenerator";
-import { FooterSocialIcons } from "../components/ui/icons";
+import { FooterSocialIcons } from "@/components/ui/Icons";
 
 const Home = () => {
   return (

@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toPng } from "html-to-image";
 import { saveAs } from "file-saver";
-import { QRCodeIcon, SocialIconsCompact } from "./icons";
+import { QRCodeIcon, SocialIconsCompact } from "./Icons";
 
 function QrCodeGenerator() {
   const [url, setUrl] = useState("");
@@ -44,7 +44,7 @@ function QrCodeGenerator() {
       } else if (type === "svg") {
         const svgElem = qrCodeElem.querySelector("svg");
 
-        if (svgElem) {
+        if (svgElem) {  
           const saveData = new Blob([svgElem.outerHTML], {
             type: "image/svg+xml;charset=utf-8",
           });
